@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>聊天室</title>
+
+    <style>
+        body,
+        div,
+        dl,
+        dt,
+        dd,
+        ul,
+        ol,
+        li,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        pre,
+        code,
+        form,
+        fieldset,
+        legend,
+        input,
+        button,
+        textarea,
+        p,
+        blockquote,
+        th,
+        td,
+        div {
+            margin: 0;
+            padding: 0;
+            font-family: Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif;
+            color: #222;
+            font-size: 13px;
+            outline: none;
+        }
+
+        *::selection {
+            color: #48aec4;
+            background: #DCDCDC;
+        }
+
+        *::-moz-selection {
+            color: #48aec4;
+            background: #DCDCDC;
+        }
+
+        img {
+            border: none;
+        }
+
+        a {
+            color: #222;
+            text-decoration: none;
+        }
+
+        em {
+            font-style: normal;
+        }
+
+        em {
+            font-style: normal;
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        header,
+        nav,
+        footer,
+        article,
+        section {
+            display: block;
+        }
+
+        .warp {
+            width: 500px;
+            height: 500px;
+            margin: 20px auto 0;
+            box-shadow: 0 0 20px #c7c7c7;
+            border-radius: 3px;
+        }
+
+        .warp .warp-header {
+            background-color: #f3f3f3;
+            height: 60px;
+        }
+
+        .warp .warp-header h2 {
+            color: #5e5e5e;
+            font-size: 18px;
+            font-weight: 200;
+            height: 40px;
+            width: 200px;
+            float: left;
+            margin: 10px;
+            line-height: 40px;
+        }
+
+        .warp .warp-content {
+            height: 320px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .warp .warp-content .warp-user-list {
+            position: absolute;
+            height: 320px;
+            width: 100px;
+            top: 0;
+            right: 0;
+            border-left: 1px solid #e8e8e8;
+        }
+
+        .warp .warp-footer {
+            position: relative;
+            border-top: 1px solid #e8e8e8;
+            height: 110px;
+        }
+
+        .warp .warp-footer .chat-textarea {
+            border: none;
+            resize: none;
+            width: 490px;
+            height: 70px;
+            display: block;
+            font-size: 14px;
+            color: #444;
+            margin: 5px auto 0;
+        }
+
+        .warp .warp-footer .sendMessage {
+            float: right;
+            margin-right: 10px;
+            background-color: #46adff;
+            color: #fff;
+            width: 70px;
+            text-align: center;
+            line-height: 28px;
+            font-size: 14px;
+            height: 30px;
+            border-radius: 3px;
+            transition: .2s;
+        }
+
+        .warp .warp-footer .sendMessage:hover {
+            background-color: #3a91d5;
+
+        }
+
+        .chatMessageWarp {
+            overflow-y: auto;
+            height: 320px;
+        }
+
+        .chatMessageWarp li {
+            padding-left: 5px;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .layer {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-color: #000;
+            z-index: 8888;
+            opacity: .5;
+        }
+
+        .login {
+            position: absolute;
+            width: 200px;
+            height: 100px;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #999;
+            left: 150px;
+            top: 100px;
+            z-index: 9999;
+        }
+
+        #user-select {
+            position: absolute;
+            top: -20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <div class="warp">
+            <header class="warp-header">
+                <h2 class="name">聊天室</h2>
+            </header>
+            <div class="warp-content">
+                <ul class="chatMessageWarp">
+                    <li v-for="(v,k) in messageList" :key="k">
+                        <span>{{v.username}} : {{v.content}}</span>
+                    </li>
+                </ul>
+                <div class="warp-user-list">
+                    <ul>
+                        <li v-for="(v,k) in userList" :key="k">
+                            <span>{{v.username}}</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="warp-footer">
+                <select id="user-select" v-model="client">
+                    <option value="" >所有人</option>
+                    <option v-for="(v,k) in userList" :key="k" :value="v.username">{{ v.username }}</option>
+                </select>
+                <textarea v-model="message" class="chat-textarea" id="chat-textarea"></textarea>
+                <a @click="send" class="sendMessage">发送</a>
+            </div>
+        </div>
+
+        <div :class="{'login':true,'hide':layerHide}">
+            <div><input v-model="username" type="text" placeholder="输入用户名"></div>
+            <div><input @click="dologin" type="button" value="登录"></div>
+        </div>
+
+        <div :class="{'layer':true,'hide':layerHide}"></div>
+    </div>
+
+</body>
+
+</html>
+<script src="./vue.min.js"></script>
+
+<script>
+    new Vue({
+        el: "#app",
+        data: {
+            messageList: [],
+            userList: [],
+            message: '',
+            ws: null,
+            client: '',
+            layerHide: false,
+            host: '127.0.0.1:8888',
+            username: localStorage.getItem('username'),
+        },
+        created: function () {
+            if (localStorage.getItem('username')) {
+                this.layerHide = true
+                this.ws_conn()
+            }
+        },
+        methods: {
+            // 登录按钮
+            dologin: function () {
+                if (this.username != '') {
+
+                    localStorage.setItem('username', this.username);
+                    this.layerHide = true
+                    this.ws_conn()
+                }
+            },
+            // 发消息按钮
+            send: function () {
+
+                if (this.message == '')
+                    return
+            
+                this.ws.send(this.message)
+                this.message = ''
+
+            },
+
+            private: function () {
+
+            },
+
+            // 收到消息时调用
+            ws_message: function (e) {
+                let data = JSON.parse(e.data)
+                this.messageList.push(data)
+
+                if (data.allUsers) {
+                    this.userList = data.allUsers
+                }
+
+            },
+
+            // 连接服务器
+            ws_conn: function () {
+                this.ws = new WebSocket('ws://' + this.host + '?username=' + this.username)
+                this.ws.onopen = this.ws_open
+                this.ws.onmessage = this.ws_message
+                this.ws.onclose = this.ws_close
+            }
+        }
+    })
+</script>
