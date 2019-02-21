@@ -1,0 +1,101 @@
+.warp {
+    width: 500px;
+    height: 500px;
+    margin: 20px auto 0;
+    box-shadow: 0 0 20px #c7c7c7;
+    border-radius: 3px;
+    position: relative;
+}
+
+.warp .warp-header {
+    background-color: #f3f3f3;
+    height: 60px;
+}
+
+.warp .warp-header h2 {
+    color: #5e5e5e;
+    font-size: 18px;
+    font-weight: 200;
+    height: 40px;
+    width: 200px;
+    float: left;
+    margin: 10px;
+    line-height: 40px;
+}
+
+.warp .warp-content {
+    height: 290px;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.warp .warp-user-list {
+    
+    position: absolute;
+    height: 500px;
+    width: 100px;
+    top: 0;
+    right: -102px;
+    box-shadow: 0 0 20px #c7c7c7;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background-color: #f3f3f3;
+}
+
+.warp .warp-footer {
+    position: relative;
+    border-top: 1px solid #e8e8e8;
+    height: 110px;
+}
+
+.warp .warp-footer .chat-textarea {
+    border: none;
+    resize: none;
+    width: 490px;
+    height: 100%;
+    display: block;
+    font-size: 14px;
+    color: #444;
+    margin: 5px auto 0;
+}
+
+.warp .warp-footer .sendMessage {
+    background-color: #46adff;
+    color: #fff;
+    width: 70px;
+    text-align: center;
+    line-height: 28px;
+    font-size: 14px;
+    height: 30px;
+    border-radius: 3px;
+    transition: .2s;
+    position: absolute;
+    right: 20px;
+    bottom: -20px;
+}
+
+.warp .warp-footer .sendMessage:hover {
+    background-color: #3a91d5;
+
+}
+
+.chatMessageWarp {
+    overflow-y: auto;
+    height: 320px;
+}
+
+.chatMessageWarp li {
+    padding-left: 5px;
+}
+
+.select{  
+    position: absolute;
+    top: -28px;
+    background:#fafdfe;  
+    height:28px;  
+    width:120px;  
+    line-height:28px;  
+    border:1px solid #9bc0dd;  
+    border-radius:2px;  
+}

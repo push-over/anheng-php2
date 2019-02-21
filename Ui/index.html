@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>聊天室</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/chat.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="warp">
+            <header class="warp-header">
+                <h2 class="name">聊天室</h2>
+            </header>
+            <div class="warp-content">
+                <ul class="chatMessageWarp">
+                    <li v-for="(v,k) in messages" :key="k">
+                        <span>{{v.username}}({{v.datetime}}) : {{v.content}}</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="warp-user-list">
+                <ul>
+                    <li v-for="(v,k) in userList" :key="k">
+                        <span>{{v}}</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="warp-footer">
+                <select class="select" v-model="userid">
+                    <option value="all">所有人</option>
+                    <option v-for="(v,k) in userList" :key="k" :value="k">{{ v }}</option>
+                </select>
+                <textarea v-model="content" class="chat-textarea" id="chat-textarea"></textarea>
+                <a @click="send" class="sendMessage">发送</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script src="./js/vue.min.js"></script>
+
+<script>
+    new Vue({
+        el: "#app",
+        data: {
+            ws: null,
+            userid: 'all',
+            content: '',
+            messages: [],
+            userList: [],
+            name: sessionStorage.name,
+            u_id: sessionStorage.u_id
+        },
+
+        created: function () {
+            var tempName = 'gz' + Math.floor(Math.random() * 10000);
+            name = prompt('输入你的名字: ', tempName);
+            u_id = Math.floor(Math.random() * 10000);
+
+            if (name != 'undefined' && name != 'null' && name != '') {
+                sessionStorage.name = name;
+                sessionStorage.u_id = u_id;
+            } else {
+                alert('请输入您的昵称！');
+                this.inputName();
+            }
+
+            this.ws = new WebSocket('ws://127.0.0.1:8888?username=' + name + '&id=' + u_id);
+            // this.ws.onopen = this.open;
+            this.ws.onmessage = this.message;
+        },
+
+        methods: {
+            send() {
+                if (this.userid == 'all') {
+                    if (this.content != '') {
+                        this.ws.send('all:' + this.content);
+                        this.content = '';
+                    } else {
+                        alert('消息不允许为空！');
+                    }
+                } else {
+                    if (this.content != '') {
+                        this.ws.send(this.userid + ':' + this.content);
+                        this.content = '';
+                    } else {
+                        alert('消息不允许为空！');
+                    }
+                }
+            },
+
+            // open() {
+            //     this.ws.send('连接成功！');
+            // },
+
+            message(e) {
+                let data = JSON.parse(e.data);
+                this.messages.push(data);
+                if (data.allUsers) {
+                    this.userList = data.allUsers
+                }
+            }
+        }
+    });
+</script>

@@ -1,0 +1,1305 @@
+2019-02-21 14:43:58 pid:10332 Workerman[server.php] start in DEBUG mode
+2019-02-21 16:34:15 pid:14678 Workerman[start.php] start in DEBUG mode
+2019-02-21 16:39:42 pid:14678 Workerman[start.php] stopping ...
+2019-02-21 16:39:42 pid:14678 Workerman[start.php] has been stopped
+2019-02-21 16:39:43 pid:15295 Workerman[start.php] start in DEBUG mode
+2019-02-21 16:51:21 pid:15295 Workerman[start.php] stopping ...
+2019-02-21 16:51:21 pid:15295 Workerman[start.php] has been stopped
+2019-02-21 16:51:22 pid:16812 Workerman[start.php] start in DEBUG mode
+2019-02-21 16:52:26 pid:16812 Workerman[start.php] stopping ...
+2019-02-21 16:52:26 pid:16812 Workerman[start.php] has been stopped
+2019-02-21 16:52:26 pid:16901 Workerman[start.php] start in DEBUG mode
+2019-02-21 16:52:54 pid:16901 Workerman[start.php] stopping ...
+2019-02-21 16:52:54 pid:16901 Workerman[start.php] has been stopped
+2019-02-21 16:52:55 pid:16972 Workerman[start.php] start in DEBUG mode
+2019-02-21 16:54:27 pid:16972 Workerman[start.php] stopping ...
+2019-02-21 16:54:27 pid:16972 Workerman[start.php] has been stopped
+2019-02-21 16:54:27 pid:17161 Workerman[start.php] start in DEBUG mode
+2019-02-21 16:54:31 pid:17162 Error: Call to a member function sendToAll() on null in /home/zan/Code/Chat/Server/start.php:16
+Stack trace:
+#0 [internal function]: ws_connection(Object(Workerman\Connection\TcpConnection))
+#1 /home/zan/Code/Chat/Workerman/Worker.php(2416): call_user_func('ws_connection', Object(Workerman\Connection\TcpConnection))
+#2 [internal function]: Workerman\Worker->acceptConnection(Resource id #14)
+#3 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#4 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#5 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#6 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#7 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#8 /home/zan/Code/Chat/Workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#9 /home/zan/Code/Chat/Server/start.php(43): Workerman\Worker::runAll()
+#10 {main}
+2019-02-21 16:54:31 pid:17162 Worker[17162] process terminated
+2019-02-21 16:54:31 pid:17161 worker[none:17162] exit with status 64000
+2019-02-21 16:55:32 pid:17161 Workerman[start.php] stopping ...
+2019-02-21 16:55:32 pid:17161 Workerman[start.php] has been stopped
+2019-02-21 16:55:32 pid:17303 Workerman[start.php] start in DEBUG mode
+2019-02-21 16:55:36 pid:17304 Error: Call to a member function sendToAll() on null in /home/zan/Code/Chat/Server/start.php:16
+Stack trace:
+#0 [internal function]: ws_connection(Object(Workerman\Connection\TcpConnection))
+#1 /home/zan/Code/Chat/Workerman/Worker.php(2416): call_user_func('ws_connection', Object(Workerman\Connection\TcpConnection))
+#2 [internal function]: Workerman\Worker->acceptConnection(Resource id #14)
+#3 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#4 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#5 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#6 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#7 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#8 /home/zan/Code/Chat/Workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#9 /home/zan/Code/Chat/Server/start.php(43): Workerman\Worker::runAll()
+#10 {main}
+2019-02-21 16:55:36 pid:17304 Worker[17304] process terminated
+2019-02-21 16:55:36 pid:17303 worker[none:17304] exit with status 64000
+2019-02-21 16:55:38 pid:17351 Error: Call to a member function sendToAll() on null in /home/zan/Code/Chat/Server/start.php:16
+Stack trace:
+#0 [internal function]: ws_connection(Object(Workerman\Connection\TcpConnection))
+#1 /home/zan/Code/Chat/Workerman/Worker.php(2416): call_user_func('ws_connection', Object(Workerman\Connection\TcpConnection))
+#2 [internal function]: Workerman\Worker->acceptConnection(Resource id #14)
+#3 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#4 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#5 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#6 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#7 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#8 /home/zan/Code/Chat/Workerman/Worker.php(1614): Workerman\Worker::forkWorkers()
+#9 /home/zan/Code/Chat/Workerman/Worker.php(1563): Workerman\Worker::monitorWorkersForLinux()
+#10 /home/zan/Code/Chat/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#11 /home/zan/Code/Chat/Server/start.php(43): Workerman\Worker::runAll()
+#12 {main}
+2019-02-21 16:55:38 pid:17351 Worker[17351] process terminated
+2019-02-21 16:55:38 pid:17303 worker[none:17351] exit with status 64000
+2019-02-21 16:55:38 pid:17361 Error: Call to a member function sendToAll() on null in /home/zan/Code/Chat/Server/start.php:16
+Stack trace:
+#0 [internal function]: ws_connection(Object(Workerman\Connection\TcpConnection))
+#1 /home/zan/Code/Chat/Workerman/Worker.php(2416): call_user_func('ws_connection', Object(Workerman\Connection\TcpConnection))
+#2 [internal function]: Workerman\Worker->acceptConnection(Resource id #14)
+#3 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#4 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#5 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#6 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#7 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#8 /home/zan/Code/Chat/Workerman/Worker.php(1614): Workerman\Worker::forkWorkers()
+#9 /home/zan/Code/Chat/Workerman/Worker.php(1563): Workerman\Worker::monitorWorkersForLinux()
+#10 /home/zan/Code/Chat/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#11 /home/zan/Code/Chat/Server/start.php(43): Workerman\Worker::runAll()
+#12 {main}
+2019-02-21 16:55:38 pid:17361 Worker[17361] process terminated
+2019-02-21 16:55:38 pid:17303 worker[none:17361] exit with status 64000
+2019-02-21 16:56:03 pid:17363 Error: Call to a member function sendToAll() on null in /home/zan/Code/Chat/Server/start.php:16
+Stack trace:
+#0 [internal function]: ws_connection(Object(Workerman\Connection\TcpConnection))
+#1 /home/zan/Code/Chat/Workerman/Worker.php(2416): call_user_func('ws_connection', Object(Workerman\Connection\TcpConnection))
+#2 [internal function]: Workerman\Worker->acceptConnection(Resource id #14)
+#3 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#4 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#5 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#6 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#7 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#8 /home/zan/Code/Chat/Workerman/Worker.php(1614): Workerman\Worker::forkWorkers()
+#9 /home/zan/Code/Chat/Workerman/Worker.php(1563): Workerman\Worker::monitorWorkersForLinux()
+#10 /home/zan/Code/Chat/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#11 /home/zan/Code/Chat/Server/start.php(43): Workerman\Worker::runAll()
+#12 {main}
+2019-02-21 16:56:03 pid:17363 Worker[17363] process terminated
+2019-02-21 16:56:03 pid:17303 worker[none:17363] exit with status 64000
+2019-02-21 16:56:07 pid:17303 Workerman[start.php] stopping ...
+2019-02-21 16:56:07 pid:17303 Workerman[start.php] has been stopped
+2019-02-21 16:56:08 pid:17474 Workerman[start.php] start in DEBUG mode
+2019-02-21 16:56:10 pid:17475 Error: Call to a member function sendToAll() on null in /home/zan/Code/Chat/Server/start.php:16
+Stack trace:
+#0 [internal function]: ws_connection(Object(Workerman\Connection\TcpConnection))
+#1 /home/zan/Code/Chat/Workerman/Worker.php(2416): call_user_func('ws_connection', Object(Workerman\Connection\TcpConnection))
+#2 [internal function]: Workerman\Worker->acceptConnection(Resource id #14)
+#3 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#4 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#5 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#6 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#7 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#8 /home/zan/Code/Chat/Workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#9 /home/zan/Code/Chat/Server/start.php(43): Workerman\Worker::runAll()
+#10 {main}
+2019-02-21 16:56:10 pid:17475 Worker[17475] process terminated
+2019-02-21 16:56:10 pid:17474 worker[none:17475] exit with status 64000
+2019-02-21 16:56:11 pid:17501 Error: Call to a member function sendToAll() on null in /home/zan/Code/Chat/Server/start.php:16
+Stack trace:
+#0 [internal function]: ws_connection(Object(Workerman\Connection\TcpConnection))
+#1 /home/zan/Code/Chat/Workerman/Worker.php(2416): call_user_func('ws_connection', Object(Workerman\Connection\TcpConnection))
+#2 [internal function]: Workerman\Worker->acceptConnection(Resource id #14)
+#3 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#4 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#5 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#6 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#7 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#8 /home/zan/Code/Chat/Workerman/Worker.php(1614): Workerman\Worker::forkWorkers()
+#9 /home/zan/Code/Chat/Workerman/Worker.php(1563): Workerman\Worker::monitorWorkersForLinux()
+#10 /home/zan/Code/Chat/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#11 /home/zan/Code/Chat/Server/start.php(43): Workerman\Worker::runAll()
+#12 {main}
+2019-02-21 16:56:11 pid:17501 Worker[17501] process terminated
+2019-02-21 16:56:11 pid:17474 worker[none:17501] exit with status 64000
+2019-02-21 16:56:11 pid:17504 Error: Call to a member function sendToAll() on null in /home/zan/Code/Chat/Server/start.php:16
+Stack trace:
+#0 [internal function]: ws_connection(Object(Workerman\Connection\TcpConnection))
+#1 /home/zan/Code/Chat/Workerman/Worker.php(2416): call_user_func('ws_connection', Object(Workerman\Connection\TcpConnection))
+#2 [internal function]: Workerman\Worker->acceptConnection(Resource id #14)
+#3 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#4 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#5 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#6 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#7 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#8 /home/zan/Code/Chat/Workerman/Worker.php(1614): Workerman\Worker::forkWorkers()
+#9 /home/zan/Code/Chat/Workerman/Worker.php(1563): Workerman\Worker::monitorWorkersForLinux()
+#10 /home/zan/Code/Chat/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#11 /home/zan/Code/Chat/Server/start.php(43): Workerman\Worker::runAll()
+#12 {main}
+2019-02-21 16:56:11 pid:17504 Worker[17504] process terminated
+2019-02-21 16:56:11 pid:17474 worker[none:17504] exit with status 64000
+2019-02-21 16:56:11 pid:17507 Error: Call to a member function sendToAll() on null in /home/zan/Code/Chat/Server/start.php:16
+Stack trace:
+#0 [internal function]: ws_connection(Object(Workerman\Connection\TcpConnection))
+#1 /home/zan/Code/Chat/Workerman/Worker.php(2416): call_user_func('ws_connection', Object(Workerman\Connection\TcpConnection))
+#2 [internal function]: Workerman\Worker->acceptConnection(Resource id #14)
+#3 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#4 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#5 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#6 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#7 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#8 /home/zan/Code/Chat/Workerman/Worker.php(1614): Workerman\Worker::forkWorkers()
+#9 /home/zan/Code/Chat/Workerman/Worker.php(1563): Workerman\Worker::monitorWorkersForLinux()
+#10 /home/zan/Code/Chat/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#11 /home/zan/Code/Chat/Server/start.php(43): Workerman\Worker::runAll()
+#12 {main}
+2019-02-21 16:56:11 pid:17507 Worker[17507] process terminated
+2019-02-21 16:56:11 pid:17474 worker[none:17507] exit with status 64000
+2019-02-21 16:56:11 pid:17508 Error: Call to a member function sendToAll() on null in /home/zan/Code/Chat/Server/start.php:16
+Stack trace:
+#0 [internal function]: ws_connection(Object(Workerman\Connection\TcpConnection))
+#1 /home/zan/Code/Chat/Workerman/Worker.php(2416): call_user_func('ws_connection', Object(Workerman\Connection\TcpConnection))
+#2 [internal function]: Workerman\Worker->acceptConnection(Resource id #14)
+#3 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#4 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#5 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#6 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#7 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#8 /home/zan/Code/Chat/Workerman/Worker.php(1614): Workerman\Worker::forkWorkers()
+#9 /home/zan/Code/Chat/Workerman/Worker.php(1563): Workerman\Worker::monitorWorkersForLinux()
+#10 /home/zan/Code/Chat/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#11 /home/zan/Code/Chat/Server/start.php(43): Workerman\Worker::runAll()
+#12 {main}
+2019-02-21 16:56:11 pid:17508 Worker[17508] process terminated
+2019-02-21 16:56:11 pid:17474 worker[none:17508] exit with status 64000
+2019-02-21 16:56:12 pid:17510 Error: Call to a member function sendToAll() on null in /home/zan/Code/Chat/Server/start.php:16
+Stack trace:
+#0 [internal function]: ws_connection(Object(Workerman\Connection\TcpConnection))
+#1 /home/zan/Code/Chat/Workerman/Worker.php(2416): call_user_func('ws_connection', Object(Workerman\Connection\TcpConnection))
+#2 [internal function]: Workerman\Worker->acceptConnection(Resource id #14)
+#3 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#4 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#5 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#6 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#7 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#8 /home/zan/Code/Chat/Workerman/Worker.php(1614): Workerman\Worker::forkWorkers()
+#9 /home/zan/Code/Chat/Workerman/Worker.php(1563): Workerman\Worker::monitorWorkersForLinux()
+#10 /home/zan/Code/Chat/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#11 /home/zan/Code/Chat/Server/start.php(43): Workerman\Worker::runAll()
+#12 {main}
+2019-02-21 16:56:12 pid:17510 Worker[17510] process terminated
+2019-02-21 16:56:12 pid:17474 worker[none:17510] exit with status 64000
+2019-02-21 16:56:12 pid:17511 Error: Call to a member function sendToAll() on null in /home/zan/Code/Chat/Server/start.php:16
+Stack trace:
+#0 [internal function]: ws_connection(Object(Workerman\Connection\TcpConnection))
+#1 /home/zan/Code/Chat/Workerman/Worker.php(2416): call_user_func('ws_connection', Object(Workerman\Connection\TcpConnection))
+#2 [internal function]: Workerman\Worker->acceptConnection(Resource id #14)
+#3 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#4 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#5 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#6 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#7 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#8 /home/zan/Code/Chat/Workerman/Worker.php(1614): Workerman\Worker::forkWorkers()
+#9 /home/zan/Code/Chat/Workerman/Worker.php(1563): Workerman\Worker::monitorWorkersForLinux()
+#10 /home/zan/Code/Chat/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#11 /home/zan/Code/Chat/Server/start.php(43): Workerman\Worker::runAll()
+#12 {main}
+2019-02-21 16:56:12 pid:17511 Worker[17511] process terminated
+2019-02-21 16:56:12 pid:17474 worker[none:17511] exit with status 64000
+2019-02-21 16:56:33 pid:17474 Workerman[start.php] stopping ...
+2019-02-21 16:56:33 pid:17474 Workerman[start.php] has been stopped
+2019-02-21 16:56:34 pid:17573 Workerman[start.php] start in DEBUG mode
+2019-02-21 16:56:37 pid:17574 Error: Call to a member function sendToAll() on null in /home/zan/Code/Chat/Server/start.php:16
+Stack trace:
+#0 [internal function]: ws_connection(Object(Workerman\Connection\TcpConnection))
+#1 /home/zan/Code/Chat/Workerman/Worker.php(2416): call_user_func('ws_connection', Object(Workerman\Connection\TcpConnection))
+#2 [internal function]: Workerman\Worker->acceptConnection(Resource id #14)
+#3 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#4 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#5 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#6 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#7 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#8 /home/zan/Code/Chat/Workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#9 /home/zan/Code/Chat/Server/start.php(43): Workerman\Worker::runAll()
+#10 {main}
+2019-02-21 16:56:37 pid:17574 Worker[17574] process terminated
+2019-02-21 16:56:37 pid:17573 worker[none:17574] exit with status 64000
+2019-02-21 16:56:38 pid:17614 Error: Call to a member function sendToAll() on null in /home/zan/Code/Chat/Server/start.php:16
+Stack trace:
+#0 [internal function]: ws_connection(Object(Workerman\Connection\TcpConnection))
+#1 /home/zan/Code/Chat/Workerman/Worker.php(2416): call_user_func('ws_connection', Object(Workerman\Connection\TcpConnection))
+#2 [internal function]: Workerman\Worker->acceptConnection(Resource id #14)
+#3 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#4 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#5 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#6 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#7 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#8 /home/zan/Code/Chat/Workerman/Worker.php(1614): Workerman\Worker::forkWorkers()
+#9 /home/zan/Code/Chat/Workerman/Worker.php(1563): Workerman\Worker::monitorWorkersForLinux()
+#10 /home/zan/Code/Chat/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#11 /home/zan/Code/Chat/Server/start.php(43): Workerman\Worker::runAll()
+#12 {main}
+2019-02-21 16:56:38 pid:17614 Worker[17614] process terminated
+2019-02-21 16:56:38 pid:17573 worker[none:17614] exit with status 64000
+2019-02-21 16:56:39 pid:17618 Error: Call to a member function sendToAll() on null in /home/zan/Code/Chat/Server/start.php:16
+Stack trace:
+#0 [internal function]: ws_connection(Object(Workerman\Connection\TcpConnection))
+#1 /home/zan/Code/Chat/Workerman/Worker.php(2416): call_user_func('ws_connection', Object(Workerman\Connection\TcpConnection))
+#2 [internal function]: Workerman\Worker->acceptConnection(Resource id #14)
+#3 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#4 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#5 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#6 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#7 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#8 /home/zan/Code/Chat/Workerman/Worker.php(1614): Workerman\Worker::forkWorkers()
+#9 /home/zan/Code/Chat/Workerman/Worker.php(1563): Workerman\Worker::monitorWorkersForLinux()
+#10 /home/zan/Code/Chat/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#11 /home/zan/Code/Chat/Server/start.php(43): Workerman\Worker::runAll()
+#12 {main}
+2019-02-21 16:56:39 pid:17618 Worker[17618] process terminated
+2019-02-21 16:56:39 pid:17573 worker[none:17618] exit with status 64000
+2019-02-21 16:56:39 pid:17620 Error: Call to a member function sendToAll() on null in /home/zan/Code/Chat/Server/start.php:16
+Stack trace:
+#0 [internal function]: ws_connection(Object(Workerman\Connection\TcpConnection))
+#1 /home/zan/Code/Chat/Workerman/Worker.php(2416): call_user_func('ws_connection', Object(Workerman\Connection\TcpConnection))
+#2 [internal function]: Workerman\Worker->acceptConnection(Resource id #14)
+#3 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#4 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#5 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#6 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#7 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#8 /home/zan/Code/Chat/Workerman/Worker.php(1614): Workerman\Worker::forkWorkers()
+#9 /home/zan/Code/Chat/Workerman/Worker.php(1563): Workerman\Worker::monitorWorkersForLinux()
+#10 /home/zan/Code/Chat/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#11 /home/zan/Code/Chat/Server/start.php(43): Workerman\Worker::runAll()
+#12 {main}
+2019-02-21 16:56:39 pid:17620 Worker[17620] process terminated
+2019-02-21 16:56:39 pid:17573 worker[none:17620] exit with status 64000
+2019-02-21 16:56:39 pid:17622 Error: Call to a member function sendToAll() on null in /home/zan/Code/Chat/Server/start.php:16
+Stack trace:
+#0 [internal function]: ws_connection(Object(Workerman\Connection\TcpConnection))
+#1 /home/zan/Code/Chat/Workerman/Worker.php(2416): call_user_func('ws_connection', Object(Workerman\Connection\TcpConnection))
+#2 [internal function]: Workerman\Worker->acceptConnection(Resource id #14)
+#3 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#4 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#5 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#6 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#7 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#8 /home/zan/Code/Chat/Workerman/Worker.php(1614): Workerman\Worker::forkWorkers()
+#9 /home/zan/Code/Chat/Workerman/Worker.php(1563): Workerman\Worker::monitorWorkersForLinux()
+#10 /home/zan/Code/Chat/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#11 /home/zan/Code/Chat/Server/start.php(43): Workerman\Worker::runAll()
+#12 {main}
+2019-02-21 16:56:39 pid:17622 Worker[17622] process terminated
+2019-02-21 16:56:39 pid:17573 worker[none:17622] exit with status 64000
+2019-02-21 16:56:39 pid:17623 Error: Call to a member function sendToAll() on null in /home/zan/Code/Chat/Server/start.php:16
+Stack trace:
+#0 [internal function]: ws_connection(Object(Workerman\Connection\TcpConnection))
+#1 /home/zan/Code/Chat/Workerman/Worker.php(2416): call_user_func('ws_connection', Object(Workerman\Connection\TcpConnection))
+#2 [internal function]: Workerman\Worker->acceptConnection(Resource id #14)
+#3 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#4 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#5 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#6 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#7 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#8 /home/zan/Code/Chat/Workerman/Worker.php(1614): Workerman\Worker::forkWorkers()
+#9 /home/zan/Code/Chat/Workerman/Worker.php(1563): Workerman\Worker::monitorWorkersForLinux()
+#10 /home/zan/Code/Chat/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#11 /home/zan/Code/Chat/Server/start.php(43): Workerman\Worker::runAll()
+#12 {main}
+2019-02-21 16:56:39 pid:17623 Worker[17623] process terminated
+2019-02-21 16:56:39 pid:17573 worker[none:17623] exit with status 64000
+2019-02-21 16:56:40 pid:17624 Error: Call to a member function sendToAll() on null in /home/zan/Code/Chat/Server/start.php:16
+Stack trace:
+#0 [internal function]: ws_connection(Object(Workerman\Connection\TcpConnection))
+#1 /home/zan/Code/Chat/Workerman/Worker.php(2416): call_user_func('ws_connection', Object(Workerman\Connection\TcpConnection))
+#2 [internal function]: Workerman\Worker->acceptConnection(Resource id #14)
+#3 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#4 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#5 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#6 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#7 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#8 /home/zan/Code/Chat/Workerman/Worker.php(1614): Workerman\Worker::forkWorkers()
+#9 /home/zan/Code/Chat/Workerman/Worker.php(1563): Workerman\Worker::monitorWorkersForLinux()
+#10 /home/zan/Code/Chat/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#11 /home/zan/Code/Chat/Server/start.php(43): Workerman\Worker::runAll()
+#12 {main}
+2019-02-21 16:56:40 pid:17624 Worker[17624] process terminated
+2019-02-21 16:56:40 pid:17573 worker[none:17624] exit with status 64000
+2019-02-21 16:56:40 pid:17626 Error: Call to a member function sendToAll() on null in /home/zan/Code/Chat/Server/start.php:16
+Stack trace:
+#0 [internal function]: ws_connection(Object(Workerman\Connection\TcpConnection))
+#1 /home/zan/Code/Chat/Workerman/Worker.php(2416): call_user_func('ws_connection', Object(Workerman\Connection\TcpConnection))
+#2 [internal function]: Workerman\Worker->acceptConnection(Resource id #14)
+#3 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#4 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#5 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#6 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#7 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#8 /home/zan/Code/Chat/Workerman/Worker.php(1614): Workerman\Worker::forkWorkers()
+#9 /home/zan/Code/Chat/Workerman/Worker.php(1563): Workerman\Worker::monitorWorkersForLinux()
+#10 /home/zan/Code/Chat/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#11 /home/zan/Code/Chat/Server/start.php(43): Workerman\Worker::runAll()
+#12 {main}
+2019-02-21 16:56:40 pid:17626 Worker[17626] process terminated
+2019-02-21 16:56:40 pid:17573 worker[none:17626] exit with status 64000
+2019-02-21 16:57:21 pid:17573 Workerman[start.php] stopping ...
+2019-02-21 16:57:21 pid:17573 Workerman[start.php] has been stopped
+2019-02-21 16:57:22 pid:17758 Workerman[start.php] start in DEBUG mode
+2019-02-21 16:57:37 pid:17759 Error: Call to a member function sendToAll() on null in /home/zan/Code/Chat/Server/start.php:16
+Stack trace:
+#0 [internal function]: ws_connection(Object(Workerman\Connection\TcpConnection))
+#1 /home/zan/Code/Chat/Workerman/Worker.php(2416): call_user_func('ws_connection', Object(Workerman\Connection\TcpConnection))
+#2 [internal function]: Workerman\Worker->acceptConnection(Resource id #14)
+#3 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#4 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#5 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#6 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#7 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#8 /home/zan/Code/Chat/Workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#9 /home/zan/Code/Chat/Server/start.php(44): Workerman\Worker::runAll()
+#10 {main}
+2019-02-21 16:57:37 pid:17759 Worker[17759] process terminated
+2019-02-21 16:57:37 pid:17758 worker[none:17759] exit with status 64000
+2019-02-21 16:57:44 pid:17809 Error: Call to a member function sendToAll() on null in /home/zan/Code/Chat/Server/start.php:16
+Stack trace:
+#0 [internal function]: ws_connection(Object(Workerman\Connection\TcpConnection))
+#1 /home/zan/Code/Chat/Workerman/Worker.php(2416): call_user_func('ws_connection', Object(Workerman\Connection\TcpConnection))
+#2 [internal function]: Workerman\Worker->acceptConnection(Resource id #14)
+#3 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#4 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#5 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#6 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#7 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#8 /home/zan/Code/Chat/Workerman/Worker.php(1614): Workerman\Worker::forkWorkers()
+#9 /home/zan/Code/Chat/Workerman/Worker.php(1563): Workerman\Worker::monitorWorkersForLinux()
+#10 /home/zan/Code/Chat/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#11 /home/zan/Code/Chat/Server/start.php(44): Workerman\Worker::runAll()
+#12 {main}
+2019-02-21 16:57:44 pid:17809 Worker[17809] process terminated
+2019-02-21 16:57:44 pid:17758 worker[none:17809] exit with status 64000
+2019-02-21 16:59:18 pid:17758 Workerman[start.php] stopping ...
+2019-02-21 16:59:18 pid:17758 Workerman[start.php] has been stopped
+2019-02-21 16:59:19 pid:18024 Workerman[start.php] start in DEBUG mode
+2019-02-21 17:01:49 pid:18024 Workerman[start.php] stopping ...
+2019-02-21 17:01:49 pid:18024 Workerman[start.php] has been stopped
+2019-02-21 17:01:50 pid:18279 Workerman[start.php] start in DEBUG mode
+2019-02-21 17:18:48 pid:18279 Workerman[start.php] stopping ...
+2019-02-21 17:18:48 pid:18279 Workerman[start.php] has been stopped
+2019-02-21 17:18:49 pid:19654 Workerman[start.php] start in DEBUG mode
+2019-02-21 17:24:13 pid:19654 Workerman[start.php] stopping ...
+2019-02-21 17:24:13 pid:19654 Workerman[start.php] has been stopped
+2019-02-21 17:24:14 pid:20134 Workerman[start.php] start in DEBUG mode
+2019-02-21 17:24:22 pid:20134 Workerman[start.php] stopping ...
+2019-02-21 17:24:22 pid:20134 Workerman[start.php] has been stopped
+2019-02-21 17:26:37 pid:20339 Workerman[start.php] start in DEBUG mode
+2019-02-21 17:32:09 pid:20339 Workerman[start.php] stopping ...
+2019-02-21 17:32:09 pid:20339 Workerman[start.php] has been stopped
+2019-02-21 17:32:10 pid:20718 Workerman[start.php] start in DEBUG mode
+2019-02-21 17:38:57 pid:20718 Workerman[start.php] stopping ...
+2019-02-21 17:38:57 pid:20718 Workerman[start.php] has been stopped
+2019-02-21 17:38:58 pid:21134 Workerman[start.php] start in DEBUG mode
+2019-02-21 17:47:00 pid:21134 Workerman[start.php] stopping ...
+2019-02-21 17:47:00 pid:21134 Workerman[start.php] has been stopped
+2019-02-21 17:47:01 pid:21982 Workerman[start.php] start in DEBUG mode
+2019-02-21 18:06:32 pid:21982 Workerman[start.php] stopping ...
+2019-02-21 18:06:32 pid:21982 Workerman[start.php] has been stopped
+2019-02-21 18:06:33 pid:23303 Workerman[start.php] start in DEBUG mode
+2019-02-21 18:16:20 pid:23303 Workerman[start.php] stopping ...
+2019-02-21 18:16:20 pid:23303 Workerman[start.php] has been stopped
+2019-02-21 18:16:22 pid:23996 Workerman[start.php] start in DEBUG mode
+2019-02-21 18:28:21 pid:23996 Workerman[start.php] stopping ...
+2019-02-21 18:28:21 pid:23996 Workerman[start.php] has been stopped
+2019-02-21 18:28:22 pid:24902 Workerman[start.php] start in DEBUG mode
+2019-02-21 18:29:32 pid:24902 Workerman[start.php] stopping ...
+2019-02-21 18:29:32 pid:24902 Workerman[start.php] has been stopped
+2019-02-21 18:29:32 pid:25007 Workerman[start.php] start in DEBUG mode
+2019-02-21 18:30:37 pid:25007 Workerman[start.php] stopping ...
+2019-02-21 18:30:37 pid:25007 Workerman[start.php] has been stopped
+2019-02-21 18:30:37 pid:25120 Workerman[start.php] start in DEBUG mode
+2019-02-21 18:32:56 pid:25120 Workerman[start.php] stopping ...
+2019-02-21 18:32:56 pid:25120 Workerman[start.php] has been stopped
+2019-02-21 18:32:57 pid:25328 Workerman[start.php] start in DEBUG mode
+2019-02-21 18:35:14 pid:25328 Workerman[start.php] stopping ...
+2019-02-21 18:35:14 pid:25328 Workerman[start.php] has been stopped
+2019-02-21 18:35:15 pid:25519 Workerman[start.php] start in DEBUG mode
+2019-02-21 19:15:27 pid:25519 Workerman[start.php] stopping ...
+2019-02-21 19:15:27 pid:25519 Workerman[start.php] has been stopped
+2019-02-21 19:15:28 pid:26107 Workerman[start.php] start in DEBUG mode
+2019-02-21 19:17:03 pid:26107 Workerman[start.php] stopping ...
+2019-02-21 19:17:03 pid:26107 Workerman[start.php] has been stopped
+2019-02-21 19:17:04 pid:26228 Workerman[start.php] start in DEBUG mode
+2019-02-21 19:19:27 pid:26228 Workerman[start.php] stopping ...
+2019-02-21 19:19:27 pid:26228 Workerman[start.php] has been stopped
+2019-02-21 19:19:27 pid:26453 Workerman[start.php] start in DEBUG mode
+2019-02-21 19:21:50 pid:26453 Workerman[start.php] stopping ...
+2019-02-21 19:21:50 pid:26453 Workerman[start.php] has been stopped
+2019-02-21 19:21:51 pid:26763 Workerman[start.php] start in DEBUG mode
+2019-02-21 19:22:35 pid:26763 Workerman[start.php] stopping ...
+2019-02-21 19:22:35 pid:26763 Workerman[start.php] has been stopped
+2019-02-21 19:22:36 pid:26837 Workerman[start.php] start in DEBUG mode
+2019-02-21 19:23:16 pid:26837 Workerman[start.php] stopping ...
+2019-02-21 19:23:16 pid:26837 Workerman[start.php] has been stopped
+2019-02-21 19:23:17 pid:26952 Workerman[start.php] start in DEBUG mode
+2019-02-21 19:28:51 pid:26952 Workerman[start.php] stopping ...
+2019-02-21 19:28:51 pid:26952 Workerman[start.php] has been stopped
+2019-02-21 19:28:51 pid:27295 Workerman[start.php] start in DEBUG mode
+2019-02-21 19:30:14 pid:27295 Workerman[start.php] stopping ...
+2019-02-21 19:30:14 pid:27295 Workerman[start.php] has been stopped
+2019-02-21 19:30:15 pid:27455 Workerman[start.php] start in DEBUG mode
+2019-02-21 19:30:22 pid:27456 Error: Call to a member function send() on string in /home/zan/Code/Chat/Server/start.php:73
+Stack trace:
+#0 /home/zan/Code/Chat/Server/start.php(37): sendTo(NULL, '1')
+#1 [internal function]: ws_message(Object(Workerman\Connection\TcpConnection), Array)
+#2 /home/zan/Code/Chat/Workerman/Connection/TcpConnection.php(658): call_user_func('ws_message', Object(Workerman\Connection\TcpConnection), '1:312')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #22)
+#4 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#5 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#6 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#7 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#9 /home/zan/Code/Chat/Workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#10 /home/zan/Code/Chat/Server/start.php(84): Workerman\Worker::runAll()
+#11 {main}
+2019-02-21 19:30:22 pid:27456 Worker[27456] process terminated
+2019-02-21 19:30:22 pid:27455 worker[none:27456] exit with status 64000
+2019-02-21 19:31:50 pid:27487 Error: Call to a member function send() on string in /home/zan/Code/Chat/Server/start.php:73
+Stack trace:
+#0 /home/zan/Code/Chat/Server/start.php(37): sendTo(NULL, '2')
+#1 [internal function]: ws_message(Object(Workerman\Connection\TcpConnection), Array)
+#2 /home/zan/Code/Chat/Workerman/Connection/TcpConnection.php(658): call_user_func('ws_message', Object(Workerman\Connection\TcpConnection), '2:\xE6\x83\xB9\xE6\x88\x91')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #23)
+#4 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#5 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#6 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#7 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#9 /home/zan/Code/Chat/Workerman/Worker.php(1614): Workerman\Worker::forkWorkers()
+#10 /home/zan/Code/Chat/Workerman/Worker.php(1563): Workerman\Worker::monitorWorkersForLinux()
+#11 /home/zan/Code/Chat/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#12 /home/zan/Code/Chat/Server/start.php(84): Workerman\Worker::runAll()
+#13 {main}
+2019-02-21 19:31:50 pid:27487 Worker[27487] process terminated
+2019-02-21 19:31:50 pid:27455 worker[none:27487] exit with status 64000
+2019-02-21 19:32:02 pid:27455 Workerman[start.php] stopping ...
+2019-02-21 19:32:02 pid:27455 Workerman[start.php] has been stopped
+2019-02-21 19:34:10 pid:27765 Workerman[start.php] start in DEBUG mode
+2019-02-21 19:34:13 pid:27766 ArgumentCountError: Too few arguments to function sendToAll(), 1 passed in /home/zan/Code/Chat/Server/start.php on line 18 and exactly 2 expected in /home/zan/Code/Chat/Server/start.php:43
+Stack trace:
+#0 /home/zan/Code/Chat/Server/start.php(18): sendToAll(Array)
+#1 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), 'GET /?username=...')
+#2 /home/zan/Code/Chat/Workerman/Protocols/Websocket.php(393): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'GET /?username=...')
+#3 /home/zan/Code/Chat/Workerman/Protocols/Websocket.php(57): Workerman\Protocols\Websocket::dealHandshake('GET /?username=...', Object(Workerman\Connection\TcpConnection))
+#4 /home/zan/Code/Chat/Workerman/Connection/TcpConnection.php(621): Workerman\Protocols\Websocket::input('GET /?username=...', Object(Workerman\Connection\TcpConnection))
+#5 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #22)
+#6 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#7 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#8 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#9 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#10 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#11 /home/zan/Code/Chat/Workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#12 /home/zan/Code/Chat/Server/start.php(70): Workerman\Worker::runAll()
+#13 {main}
+2019-02-21 19:34:13 pid:27766 Worker[27766] process terminated
+2019-02-21 19:34:13 pid:27765 worker[none:27766] exit with status 64000
+2019-02-21 19:34:29 pid:27765 Workerman[start.php] stopping ...
+2019-02-21 19:34:29 pid:27765 Workerman[start.php] has been stopped
+2019-02-21 19:34:29 pid:27852 Workerman[start.php] start in DEBUG mode
+2019-02-21 19:34:32 pid:27853 ArgumentCountError: Too few arguments to function sendToAll(), 1 passed in /home/zan/Code/Chat/Server/start.php on line 18 and exactly 2 expected in /home/zan/Code/Chat/Server/start.php:43
+Stack trace:
+#0 /home/zan/Code/Chat/Server/start.php(18): sendToAll(Array)
+#1 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), 'GET /?username=...')
+#2 /home/zan/Code/Chat/Workerman/Protocols/Websocket.php(393): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'GET /?username=...')
+#3 /home/zan/Code/Chat/Workerman/Protocols/Websocket.php(57): Workerman\Protocols\Websocket::dealHandshake('GET /?username=...', Object(Workerman\Connection\TcpConnection))
+#4 /home/zan/Code/Chat/Workerman/Connection/TcpConnection.php(621): Workerman\Protocols\Websocket::input('GET /?username=...', Object(Workerman\Connection\TcpConnection))
+#5 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #22)
+#6 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#7 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#8 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#9 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#10 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#11 /home/zan/Code/Chat/Workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#12 /home/zan/Code/Chat/Server/start.php(70): Workerman\Worker::runAll()
+#13 {main}
+2019-02-21 19:34:32 pid:27853 Worker[27853] process terminated
+2019-02-21 19:34:32 pid:27852 worker[none:27853] exit with status 64000
+2019-02-21 19:35:01 pid:27890 ArgumentCountError: Too few arguments to function sendToAll(), 1 passed in /home/zan/Code/Chat/Server/start.php on line 18 and exactly 2 expected in /home/zan/Code/Chat/Server/start.php:43
+Stack trace:
+#0 /home/zan/Code/Chat/Server/start.php(18): sendToAll(Array)
+#1 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), 'GET /?username=...')
+#2 /home/zan/Code/Chat/Workerman/Protocols/Websocket.php(393): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'GET /?username=...')
+#3 /home/zan/Code/Chat/Workerman/Protocols/Websocket.php(57): Workerman\Protocols\Websocket::dealHandshake('GET /?username=...', Object(Workerman\Connection\TcpConnection))
+#4 /home/zan/Code/Chat/Workerman/Connection/TcpConnection.php(621): Workerman\Protocols\Websocket::input('GET /?username=...', Object(Workerman\Connection\TcpConnection))
+#5 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #23)
+#6 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#7 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#8 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#9 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#10 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#11 /home/zan/Code/Chat/Workerman/Worker.php(1614): Workerman\Worker::forkWorkers()
+#12 /home/zan/Code/Chat/Workerman/Worker.php(1563): Workerman\Worker::monitorWorkersForLinux()
+#13 /home/zan/Code/Chat/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#14 /home/zan/Code/Chat/Server/start.php(70): Workerman\Worker::runAll()
+#15 {main}
+2019-02-21 19:35:01 pid:27890 Worker[27890] process terminated
+2019-02-21 19:35:01 pid:27852 worker[none:27890] exit with status 64000
+2019-02-21 19:35:11 pid:27948 ArgumentCountError: Too few arguments to function sendToAll(), 1 passed in /home/zan/Code/Chat/Server/start.php on line 18 and exactly 2 expected in /home/zan/Code/Chat/Server/start.php:43
+Stack trace:
+#0 /home/zan/Code/Chat/Server/start.php(18): sendToAll(Array)
+#1 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), 'GET /?username=...')
+#2 /home/zan/Code/Chat/Workerman/Protocols/Websocket.php(393): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'GET /?username=...')
+#3 /home/zan/Code/Chat/Workerman/Protocols/Websocket.php(57): Workerman\Protocols\Websocket::dealHandshake('GET /?username=...', Object(Workerman\Connection\TcpConnection))
+#4 /home/zan/Code/Chat/Workerman/Connection/TcpConnection.php(621): Workerman\Protocols\Websocket::input('GET /?username=...', Object(Workerman\Connection\TcpConnection))
+#5 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #24)
+#6 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#7 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#8 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#9 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#10 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#11 /home/zan/Code/Chat/Workerman/Worker.php(1614): Workerman\Worker::forkWorkers()
+#12 /home/zan/Code/Chat/Workerman/Worker.php(1563): Workerman\Worker::monitorWorkersForLinux()
+#13 /home/zan/Code/Chat/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#14 /home/zan/Code/Chat/Server/start.php(70): Workerman\Worker::runAll()
+#15 {main}
+2019-02-21 19:35:11 pid:27948 Worker[27948] process terminated
+2019-02-21 19:35:11 pid:27852 worker[none:27948] exit with status 64000
+2019-02-21 19:35:14 pid:27852 Workerman[start.php] stopping ...
+2019-02-21 19:35:14 pid:27852 Workerman[start.php] has been stopped
+2019-02-21 19:35:15 pid:28019 Workerman[start.php] start in DEBUG mode
+2019-02-21 19:35:17 pid:28020 ArgumentCountError: Too few arguments to function sendToAll(), 1 passed in /home/zan/Code/Chat/Server/start.php on line 18 and exactly 2 expected in /home/zan/Code/Chat/Server/start.php:42
+Stack trace:
+#0 /home/zan/Code/Chat/Server/start.php(18): sendToAll(Array)
+#1 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), 'GET /?username=...')
+#2 /home/zan/Code/Chat/Workerman/Protocols/Websocket.php(393): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'GET /?username=...')
+#3 /home/zan/Code/Chat/Workerman/Protocols/Websocket.php(57): Workerman\Protocols\Websocket::dealHandshake('GET /?username=...', Object(Workerman\Connection\TcpConnection))
+#4 /home/zan/Code/Chat/Workerman/Connection/TcpConnection.php(621): Workerman\Protocols\Websocket::input('GET /?username=...', Object(Workerman\Connection\TcpConnection))
+#5 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #22)
+#6 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#7 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#8 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#9 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#10 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#11 /home/zan/Code/Chat/Workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#12 /home/zan/Code/Chat/Server/start.php(64): Workerman\Worker::runAll()
+#13 {main}
+2019-02-21 19:35:17 pid:28020 Worker[28020] process terminated
+2019-02-21 19:35:17 pid:28019 worker[none:28020] exit with status 64000
+2019-02-21 19:35:59 pid:28019 Workerman[start.php] stopping ...
+2019-02-21 19:35:59 pid:28019 Workerman[start.php] has been stopped
+2019-02-21 19:36:31 pid:28167 Workerman[start.php] start in DEBUG mode
+2019-02-21 19:40:53 pid:28167 Workerman[start.php] stopping ...
+2019-02-21 19:40:53 pid:28167 Workerman[start.php] has been stopped
+2019-02-21 19:40:56 pid:28736 Workerman[start.php] start in DEBUG mode
+2019-02-21 19:40:58 pid:28737 ArgumentCountError: Too few arguments to function sendToAll(), 1 passed in /home/zan/Code/Chat/Server/start.php on line 18 and exactly 2 expected in /home/zan/Code/Chat/Server/start.php:44
+Stack trace:
+#0 /home/zan/Code/Chat/Server/start.php(18): sendToAll(Array)
+#1 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), 'GET /?username=...')
+#2 /home/zan/Code/Chat/Workerman/Protocols/Websocket.php(393): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'GET /?username=...')
+#3 /home/zan/Code/Chat/Workerman/Protocols/Websocket.php(57): Workerman\Protocols\Websocket::dealHandshake('GET /?username=...', Object(Workerman\Connection\TcpConnection))
+#4 /home/zan/Code/Chat/Workerman/Connection/TcpConnection.php(621): Workerman\Protocols\Websocket::input('GET /?username=...', Object(Workerman\Connection\TcpConnection))
+#5 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #22)
+#6 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#7 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#8 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#9 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#10 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#11 /home/zan/Code/Chat/Workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#12 /home/zan/Code/Chat/Server/start.php(68): Workerman\Worker::runAll()
+#13 {main}
+2019-02-21 19:40:58 pid:28737 Worker[28737] process terminated
+2019-02-21 19:40:58 pid:28736 worker[none:28737] exit with status 64000
+2019-02-21 19:43:27 pid:28736 Workerman[start.php] stopping ...
+2019-02-21 19:43:27 pid:28736 Workerman[start.php] has been stopped
+2019-02-21 19:43:30 pid:28848 Workerman[start.php] start in DEBUG mode
+2019-02-21 19:43:40 pid:28849 ArgumentCountError: Too few arguments to function sendToAll(), 1 passed in /home/zan/Code/Chat/Server/start.php on line 19 and exactly 2 expected in /home/zan/Code/Chat/Server/start.php:45
+Stack trace:
+#0 /home/zan/Code/Chat/Server/start.php(19): sendToAll(Array)
+#1 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), 'GET /?username=...')
+#2 /home/zan/Code/Chat/Workerman/Protocols/Websocket.php(393): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'GET /?username=...')
+#3 /home/zan/Code/Chat/Workerman/Protocols/Websocket.php(57): Workerman\Protocols\Websocket::dealHandshake('GET /?username=...', Object(Workerman\Connection\TcpConnection))
+#4 /home/zan/Code/Chat/Workerman/Connection/TcpConnection.php(621): Workerman\Protocols\Websocket::input('GET /?username=...', Object(Workerman\Connection\TcpConnection))
+#5 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #22)
+#6 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#7 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#8 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#9 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#10 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#11 /home/zan/Code/Chat/Workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#12 /home/zan/Code/Chat/Server/start.php(68): Workerman\Worker::runAll()
+#13 {main}
+2019-02-21 19:43:40 pid:28849 Worker[28849] process terminated
+2019-02-21 19:43:40 pid:28848 worker[none:28849] exit with status 64000
+2019-02-21 19:47:04 pid:28848 Workerman[start.php] stopping ...
+2019-02-21 19:47:04 pid:28848 Workerman[start.php] has been stopped
+2019-02-21 19:47:06 pid:29296 Workerman[start.php] start in DEBUG mode
+2019-02-21 19:47:10 pid:29297 ArgumentCountError: Too few arguments to function sendToAll(), 1 passed in /home/zan/Code/Chat/Server/start.php on line 18 and exactly 2 expected in /home/zan/Code/Chat/Server/start.php:45
+Stack trace:
+#0 /home/zan/Code/Chat/Server/start.php(18): sendToAll(Array)
+#1 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), 'GET /?username=...')
+#2 /home/zan/Code/Chat/Workerman/Protocols/Websocket.php(393): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'GET /?username=...')
+#3 /home/zan/Code/Chat/Workerman/Protocols/Websocket.php(57): Workerman\Protocols\Websocket::dealHandshake('GET /?username=...', Object(Workerman\Connection\TcpConnection))
+#4 /home/zan/Code/Chat/Workerman/Connection/TcpConnection.php(621): Workerman\Protocols\Websocket::input('GET /?username=...', Object(Workerman\Connection\TcpConnection))
+#5 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #22)
+#6 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#7 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#8 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#9 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#10 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#11 /home/zan/Code/Chat/Workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#12 /home/zan/Code/Chat/Server/start.php(69): Workerman\Worker::runAll()
+#13 {main}
+2019-02-21 19:47:10 pid:29297 Worker[29297] process terminated
+2019-02-21 19:47:10 pid:29296 worker[none:29297] exit with status 64000
+2019-02-21 19:48:38 pid:29296 Workerman[start.php] stopping ...
+2019-02-21 19:48:38 pid:29296 Workerman[start.php] has been stopped
+2019-02-21 19:51:34 pid:29626 Workerman[start.php] start in DEBUG mode
+2019-02-21 19:52:30 pid:29626 Workerman[start.php] stopping ...
+2019-02-21 19:52:30 pid:29626 Workerman[start.php] has been stopped
+2019-02-21 19:52:32 pid:29716 Workerman[start.php] start in DEBUG mode
+2019-02-21 19:52:53 pid:29716 Workerman[start.php] stopping ...
+2019-02-21 19:52:53 pid:29716 Workerman[start.php] has been stopped
+2019-02-21 19:52:53 pid:29800 Workerman[start.php] start in DEBUG mode
+2019-02-21 19:53:20 pid:29800 Workerman[start.php] stopping ...
+2019-02-21 19:53:20 pid:29800 Workerman[start.php] has been stopped
+2019-02-21 19:53:21 pid:29857 Workerman[start.php] start in DEBUG mode
+2019-02-21 19:53:47 pid:29858 Error: Call to a member function send() on string in /home/zan/Code/Chat/Server/start.php:58
+Stack trace:
+#0 /home/zan/Code/Chat/Server/start.php(32): sendToAll('{"username":"gz...', '3')
+#1 [internal function]: ws_message(Object(Workerman\Connection\TcpConnection), Array)
+#2 /home/zan/Code/Chat/Workerman/Connection/TcpConnection.php(658): call_user_func('ws_message', Object(Workerman\Connection\TcpConnection), '3:werwe')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #22)
+#4 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#5 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#6 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#7 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#9 /home/zan/Code/Chat/Workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#10 /home/zan/Code/Chat/Server/start.php(70): Workerman\Worker::runAll()
+#11 {main}
+2019-02-21 19:53:47 pid:29858 Worker[29858] process terminated
+2019-02-21 19:53:47 pid:29857 worker[none:29858] exit with status 64000
+2019-02-21 19:54:28 pid:29857 Workerman[start.php] stopping ...
+2019-02-21 19:54:28 pid:29857 Workerman[start.php] has been stopped
+2019-02-21 19:54:29 pid:29994 Workerman[start.php] start in DEBUG mode
+2019-02-21 19:54:43 pid:29995 Error: Call to a member function send() on string in /home/zan/Code/Chat/Server/start.php:58
+Stack trace:
+#0 /home/zan/Code/Chat/Server/start.php(32): sendToAll('{"username":"gz...', '3')
+#1 [internal function]: ws_message(Object(Workerman\Connection\TcpConnection), Array)
+#2 /home/zan/Code/Chat/Workerman/Connection/TcpConnection.php(658): call_user_func('ws_message', Object(Workerman\Connection\TcpConnection), '3:321213')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #22)
+#4 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#5 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#6 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#7 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#9 /home/zan/Code/Chat/Workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#10 /home/zan/Code/Chat/Server/start.php(70): Workerman\Worker::runAll()
+#11 {main}
+2019-02-21 19:54:43 pid:29995 Worker[29995] process terminated
+2019-02-21 19:54:44 pid:29994 worker[none:29995] exit with status 64000
+2019-02-21 19:56:37 pid:29994 Workerman[start.php] stopping ...
+2019-02-21 19:56:37 pid:29994 Workerman[start.php] has been stopped
+2019-02-21 19:56:39 pid:30099 Workerman[start.php] start in DEBUG mode
+2019-02-21 19:57:39 pid:30100 Error: Call to a member function send() on string in /home/zan/Code/Chat/Server/start.php:59
+Stack trace:
+#0 /home/zan/Code/Chat/Server/start.php(32): sendToAll('{"username":"gz...', '1')
+#1 [internal function]: ws_message(Object(Workerman\Connection\TcpConnection), Array)
+#2 /home/zan/Code/Chat/Workerman/Connection/TcpConnection.php(658): call_user_func('ws_message', Object(Workerman\Connection\TcpConnection), '1:1')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #22)
+#4 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#5 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#6 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#7 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#9 /home/zan/Code/Chat/Workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#10 /home/zan/Code/Chat/Server/start.php(71): Workerman\Worker::runAll()
+#11 {main}
+2019-02-21 19:57:39 pid:30100 Worker[30100] process terminated
+2019-02-21 19:57:39 pid:30099 worker[none:30100] exit with status 64000
+2019-02-21 19:58:04 pid:30099 Workerman[start.php] stopping ...
+2019-02-21 19:58:04 pid:30099 Workerman[start.php] has been stopped
+2019-02-21 19:58:07 pid:30209 Workerman[start.php] start in DEBUG mode
+2019-02-21 19:59:12 pid:30210 Error: Call to a member function send() on string in /home/zan/Code/Chat/Server/start.php:59
+Stack trace:
+#0 /home/zan/Code/Chat/Server/start.php(32): sendToAll('{"username":"gz...', '1')
+#1 [internal function]: ws_message(Object(Workerman\Connection\TcpConnection), Array)
+#2 /home/zan/Code/Chat/Workerman/Connection/TcpConnection.php(658): call_user_func('ws_message', Object(Workerman\Connection\TcpConnection), '1:1')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#4 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#5 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#6 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#7 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#9 /home/zan/Code/Chat/Workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#10 /home/zan/Code/Chat/Server/start.php(71): Workerman\Worker::runAll()
+#11 {main}
+2019-02-21 19:59:12 pid:30210 Worker[30210] process terminated
+2019-02-21 19:59:12 pid:30209 worker[none:30210] exit with status 64000
+2019-02-21 19:59:55 pid:30209 Workerman[start.php] stopping ...
+2019-02-21 19:59:55 pid:30209 Workerman[start.php] has been stopped
+2019-02-21 20:02:24 pid:30465 Workerman[start.php] start in DEBUG mode
+2019-02-21 20:02:35 pid:30466 Error: Call to a member function send() on string in /home/zan/Code/Chat/Server/start.php:59
+Stack trace:
+#0 /home/zan/Code/Chat/Server/start.php(32): sendToAll('{"username":"gz...', '1')
+#1 [internal function]: ws_message(Object(Workerman\Connection\TcpConnection), Array)
+#2 /home/zan/Code/Chat/Workerman/Connection/TcpConnection.php(658): call_user_func('ws_message', Object(Workerman\Connection\TcpConnection), '1:1')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#4 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#5 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#6 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#7 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#9 /home/zan/Code/Chat/Workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#10 /home/zan/Code/Chat/Server/start.php(71): Workerman\Worker::runAll()
+#11 {main}
+2019-02-21 20:02:35 pid:30466 Worker[30466] process terminated
+2019-02-21 20:02:35 pid:30465 worker[none:30466] exit with status 64000
+2019-02-21 20:03:05 pid:30465 Workerman[start.php] stopping ...
+2019-02-21 20:03:05 pid:30465 Workerman[start.php] has been stopped
+2019-02-21 20:03:07 pid:30545 Workerman[start.php] start in DEBUG mode
+2019-02-21 20:03:10 pid:30546 Exception: You can't send(NULL) to client, you need to convert it to a string.  in /home/zan/Code/Chat/Workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /home/zan/Code/Chat/Workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(NULL, Object(Workerman\Connection\TcpConnection))
+#1 /home/zan/Code/Chat/Server/start.php(54): Workerman\Connection\TcpConnection->send(NULL)
+#2 /home/zan/Code/Chat/Server/start.php(18): sendToAll(NULL)
+#3 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), 'GET /?username=...')
+#4 /home/zan/Code/Chat/Workerman/Protocols/Websocket.php(393): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'GET /?username=...')
+#5 /home/zan/Code/Chat/Workerman/Protocols/Websocket.php(57): Workerman\Protocols\Websocket::dealHandshake('GET /?username=...', Object(Workerman\Connection\TcpConnection))
+#6 /home/zan/Code/Chat/Workerman/Connection/TcpConnection.php(621): Workerman\Protocols\Websocket::input('GET /?username=...', Object(Workerman\Connection\TcpConnection))
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #22)
+#8 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#9 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#10 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#11 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#12 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#13 /home/zan/Code/Chat/Workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#14 /home/zan/Code/Chat/Server/start.php(71): Workerman\Worker::runAll()
+#15 {main}
+2019-02-21 20:03:10 pid:30546 Worker[30546] process terminated
+2019-02-21 20:03:10 pid:30545 worker[none:30546] exit with status 64000
+2019-02-21 20:03:14 pid:30574 Exception: You can't send(NULL) to client, you need to convert it to a string.  in /home/zan/Code/Chat/Workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /home/zan/Code/Chat/Workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(NULL, Object(Workerman\Connection\TcpConnection))
+#1 /home/zan/Code/Chat/Server/start.php(54): Workerman\Connection\TcpConnection->send(NULL)
+#2 /home/zan/Code/Chat/Server/start.php(18): sendToAll(NULL)
+#3 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), 'GET /?username=...')
+#4 /home/zan/Code/Chat/Workerman/Protocols/Websocket.php(393): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'GET /?username=...')
+#5 /home/zan/Code/Chat/Workerman/Protocols/Websocket.php(57): Workerman\Protocols\Websocket::dealHandshake('GET /?username=...', Object(Workerman\Connection\TcpConnection))
+#6 /home/zan/Code/Chat/Workerman/Connection/TcpConnection.php(621): Workerman\Protocols\Websocket::input('GET /?username=...', Object(Workerman\Connection\TcpConnection))
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #23)
+#8 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#9 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#10 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#11 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#12 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#13 /home/zan/Code/Chat/Workerman/Worker.php(1614): Workerman\Worker::forkWorkers()
+#14 /home/zan/Code/Chat/Workerman/Worker.php(1563): Workerman\Worker::monitorWorkersForLinux()
+#15 /home/zan/Code/Chat/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#16 /home/zan/Code/Chat/Server/start.php(71): Workerman\Worker::runAll()
+#17 {main}
+2019-02-21 20:03:14 pid:30574 Worker[30574] process terminated
+2019-02-21 20:03:14 pid:30545 worker[none:30574] exit with status 64000
+2019-02-21 20:03:38 pid:30545 Workerman[start.php] stopping ...
+2019-02-21 20:03:38 pid:30545 Workerman[start.php] has been stopped
+2019-02-21 20:03:40 pid:30640 Workerman[start.php] start in DEBUG mode
+2019-02-21 20:03:49 pid:30641 Exception: You can't send(NULL) to client, you need to convert it to a string.  in /home/zan/Code/Chat/Workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /home/zan/Code/Chat/Workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(NULL, Object(Workerman\Connection\TcpConnection))
+#1 /home/zan/Code/Chat/Server/start.php(54): Workerman\Connection\TcpConnection->send(NULL)
+#2 /home/zan/Code/Chat/Server/start.php(18): sendToAll(NULL)
+#3 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), 'GET /?username=...')
+#4 /home/zan/Code/Chat/Workerman/Protocols/Websocket.php(393): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'GET /?username=...')
+#5 /home/zan/Code/Chat/Workerman/Protocols/Websocket.php(57): Workerman\Protocols\Websocket::dealHandshake('GET /?username=...', Object(Workerman\Connection\TcpConnection))
+#6 /home/zan/Code/Chat/Workerman/Connection/TcpConnection.php(621): Workerman\Protocols\Websocket::input('GET /?username=...', Object(Workerman\Connection\TcpConnection))
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #22)
+#8 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#9 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#10 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#11 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#12 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#13 /home/zan/Code/Chat/Workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#14 /home/zan/Code/Chat/Server/start.php(71): Workerman\Worker::runAll()
+#15 {main}
+2019-02-21 20:03:49 pid:30641 Worker[30641] process terminated
+2019-02-21 20:03:49 pid:30640 worker[none:30641] exit with status 64000
+2019-02-21 20:05:13 pid:30640 Workerman[start.php] stopping ...
+2019-02-21 20:05:13 pid:30640 Workerman[start.php] has been stopped
+2019-02-21 20:05:14 pid:30818 Workerman[start.php] start in DEBUG mode
+2019-02-21 20:05:18 pid:30821 Exception: You can't send(NULL) to client, you need to convert it to a string.  in /home/zan/Code/Chat/Workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /home/zan/Code/Chat/Workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(NULL, Object(Workerman\Connection\TcpConnection))
+#1 /home/zan/Code/Chat/Server/start.php(54): Workerman\Connection\TcpConnection->send(NULL)
+#2 /home/zan/Code/Chat/Server/start.php(18): sendToAll(NULL)
+#3 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), 'GET /?username=...')
+#4 /home/zan/Code/Chat/Workerman/Protocols/Websocket.php(393): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'GET /?username=...')
+#5 /home/zan/Code/Chat/Workerman/Protocols/Websocket.php(57): Workerman\Protocols\Websocket::dealHandshake('GET /?username=...', Object(Workerman\Connection\TcpConnection))
+#6 /home/zan/Code/Chat/Workerman/Connection/TcpConnection.php(621): Workerman\Protocols\Websocket::input('GET /?username=...', Object(Workerman\Connection\TcpConnection))
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #22)
+#8 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#9 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#10 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#11 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#12 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#13 /home/zan/Code/Chat/Workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#14 /home/zan/Code/Chat/Server/start.php(70): Workerman\Worker::runAll()
+#15 {main}
+2019-02-21 20:05:18 pid:30821 Worker[30821] process terminated
+2019-02-21 20:05:18 pid:30818 worker[none:30821] exit with status 64000
+2019-02-21 20:05:21 pid:30845 Exception: You can't send(NULL) to client, you need to convert it to a string.  in /home/zan/Code/Chat/Workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /home/zan/Code/Chat/Workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(NULL, Object(Workerman\Connection\TcpConnection))
+#1 /home/zan/Code/Chat/Server/start.php(54): Workerman\Connection\TcpConnection->send(NULL)
+#2 /home/zan/Code/Chat/Server/start.php(18): sendToAll(NULL)
+#3 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), 'GET /?username=...')
+#4 /home/zan/Code/Chat/Workerman/Protocols/Websocket.php(393): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'GET /?username=...')
+#5 /home/zan/Code/Chat/Workerman/Protocols/Websocket.php(57): Workerman\Protocols\Websocket::dealHandshake('GET /?username=...', Object(Workerman\Connection\TcpConnection))
+#6 /home/zan/Code/Chat/Workerman/Connection/TcpConnection.php(621): Workerman\Protocols\Websocket::input('GET /?username=...', Object(Workerman\Connection\TcpConnection))
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #23)
+#8 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#9 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#10 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#11 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#12 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#13 /home/zan/Code/Chat/Workerman/Worker.php(1614): Workerman\Worker::forkWorkers()
+#14 /home/zan/Code/Chat/Workerman/Worker.php(1563): Workerman\Worker::monitorWorkersForLinux()
+#15 /home/zan/Code/Chat/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#16 /home/zan/Code/Chat/Server/start.php(70): Workerman\Worker::runAll()
+#17 {main}
+2019-02-21 20:05:21 pid:30845 Worker[30845] process terminated
+2019-02-21 20:05:21 pid:30818 worker[none:30845] exit with status 64000
+2019-02-21 20:05:35 pid:30818 Workerman[start.php] stopping ...
+2019-02-21 20:05:35 pid:30818 Workerman[start.php] has been stopped
+2019-02-21 20:05:37 pid:30907 Workerman[server.php] start in DEBUG mode
+2019-02-21 20:07:58 pid:30907 Workerman[server.php] stopping ...
+2019-02-21 20:07:58 pid:30907 Workerman[server.php] has been stopped
+2019-02-21 20:08:00 pid:31016 Workerman[server.php] start in DEBUG mode
+2019-02-21 20:09:02 pid:31016 Workerman[server.php] stopping ...
+2019-02-21 20:09:02 pid:31016 Workerman[server.php] has been stopped
+2019-02-21 20:09:04 pid:31109 Workerman[server.php] start in DEBUG mode
+2019-02-21 20:12:46 pid:31109 Workerman[server.php] stopping ...
+2019-02-21 20:12:46 pid:31109 Workerman[server.php] has been stopped
+2019-02-21 20:12:49 pid:31232 Workerman[server.php] start in DEBUG mode
+2019-02-21 20:14:15 pid:31232 Workerman[server.php] stopping ...
+2019-02-21 20:14:15 pid:31232 Workerman[server.php] has been stopped
+2019-02-21 20:14:16 pid:31341 Workerman[server.php] start in DEBUG mode
+2019-02-21 20:24:45 pid:31341 Workerman[server.php] stopping ...
+2019-02-21 20:24:45 pid:31341 Workerman[server.php] has been stopped
+2019-02-21 20:24:49 pid:31740 Workerman[server.php] start in DEBUG mode
+2019-02-21 20:26:47 pid:31740 Workerman[server.php] stopping ...
+2019-02-21 20:26:47 pid:31740 Workerman[server.php] has been stopped
+2019-02-21 20:26:49 pid:31833 Workerman[server.php] start in DEBUG mode
+2019-02-21 20:27:31 pid:31833 Workerman[server.php] stopping ...
+2019-02-21 20:27:31 pid:31833 Workerman[server.php] has been stopped
+2019-02-21 20:28:43 pid:31990 Workerman[server.php] start in DEBUG mode
+2019-02-21 20:31:37 pid:31990 Workerman[server.php] stopping ...
+2019-02-21 20:31:37 pid:31990 Workerman[server.php] has been stopped
+2019-02-21 20:31:38 pid:32196 Workerman[server.php] start in DEBUG mode
+2019-02-21 20:34:20 pid:32196 Workerman[server.php] stopping ...
+2019-02-21 20:34:20 pid:32196 Workerman[server.php] has been stopped
+2019-02-21 20:34:22 pid:32363 Workerman[server.php] start in DEBUG mode
+2019-02-21 20:35:47 pid:32363 Workerman[server.php] stopping ...
+2019-02-21 20:35:47 pid:32363 Workerman[server.php] has been stopped
+2019-02-21 20:35:50 pid:32497 Workerman[server.php] start in DEBUG mode
+2019-02-21 20:36:30 pid:32497 Workerman[server.php] stopping ...
+2019-02-21 20:36:30 pid:32497 Workerman[server.php] has been stopped
+2019-02-21 20:36:32 pid:32582 Workerman[start.php] start in DEBUG mode
+2019-02-21 20:37:33 pid:32582 Workerman[start.php] stopping ...
+2019-02-21 20:37:33 pid:32582 Workerman[start.php] has been stopped
+2019-02-21 20:37:36 pid:32695 Workerman[start.php] start in DEBUG mode
+2019-02-21 20:37:51 pid:32696 Error: Call to a member function send() on string in /home/zan/Code/Chat/Server/start.php:60
+Stack trace:
+#0 /home/zan/Code/Chat/Server/start.php(32): sendToAll('{"username":"gz...', '1')
+#1 [internal function]: ws_message(Object(Workerman\Connection\TcpConnection), Array)
+#2 /home/zan/Code/Chat/Workerman/Connection/TcpConnection.php(658): call_user_func('ws_message', Object(Workerman\Connection\TcpConnection), '1:1')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #22)
+#4 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#5 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#6 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#7 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#9 /home/zan/Code/Chat/Workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#10 /home/zan/Code/Chat/Server/start.php(72): Workerman\Worker::runAll()
+#11 {main}
+2019-02-21 20:37:51 pid:32696 Worker[32696] process terminated
+2019-02-21 20:37:51 pid:32695 worker[none:32696] exit with status 64000
+2019-02-21 20:38:23 pid:32695 Workerman[start.php] stopping ...
+2019-02-21 20:38:23 pid:32695 Workerman[start.php] has been stopped
+2019-02-21 20:38:24 pid:337 Workerman[start.php] start in DEBUG mode
+2019-02-21 20:39:56 pid:337 Workerman[start.php] stopping ...
+2019-02-21 20:39:56 pid:337 Workerman[start.php] has been stopped
+2019-02-21 20:39:57 pid:465 Workerman[start.php] start in DEBUG mode
+2019-02-21 20:41:11 pid:465 Workerman[start.php] stopping ...
+2019-02-21 20:41:11 pid:465 Workerman[start.php] has been stopped
+2019-02-21 20:41:13 pid:557 Workerman[start.php] start in DEBUG mode
+2019-02-21 20:44:10 pid:557 Workerman[start.php] stopping ...
+2019-02-21 20:44:10 pid:557 Workerman[start.php] has been stopped
+2019-02-21 20:44:11 pid:677 Workerman[start.php] start in DEBUG mode
+2019-02-21 20:46:19 pid:677 Workerman[start.php] stopping ...
+2019-02-21 20:46:19 pid:677 Workerman[start.php] has been stopped
+2019-02-21 20:46:20 pid:770 Workerman[start.php] start in DEBUG mode
+2019-02-21 20:54:18 pid:770 Workerman[start.php] stopping ...
+2019-02-21 20:54:18 pid:770 Workerman[start.php] has been stopped
+2019-02-21 20:54:28 pid:1145 Workerman[start.php] start in DEBUG mode
+2019-02-21 20:56:48 pid:1146 Error: Call to a member function send() on string in /home/zan/Code/Chat/Server/start.php:62
+Stack trace:
+#0 /home/zan/Code/Chat/Server/start.php(34): sendToAll('{"username":"gz...', '5955')
+#1 [internal function]: ws_message(Object(Workerman\Connection\TcpConnection), Array)
+#2 /home/zan/Code/Chat/Workerman/Connection/TcpConnection.php(658): call_user_func('ws_message', Object(Workerman\Connection\TcpConnection), '5955:1')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #28)
+#4 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#5 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#6 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#7 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#9 /home/zan/Code/Chat/Workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#10 /home/zan/Code/Chat/Server/start.php(74): Workerman\Worker::runAll()
+#11 {main}
+2019-02-21 20:56:48 pid:1146 Worker[1146] process terminated
+2019-02-21 20:56:48 pid:1145 worker[none:1146] exit with status 64000
+2019-02-21 20:57:43 pid:1386 Error: Call to a member function send() on string in /home/zan/Code/Chat/Server/start.php:62
+Stack trace:
+#0 /home/zan/Code/Chat/Server/start.php(34): sendToAll('{"username":"gz...', '8749')
+#1 [internal function]: ws_message(Object(Workerman\Connection\TcpConnection), Array)
+#2 /home/zan/Code/Chat/Workerman/Connection/TcpConnection.php(658): call_user_func('ws_message', Object(Workerman\Connection\TcpConnection), '8749:1')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #26)
+#4 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#5 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#6 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#7 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#9 /home/zan/Code/Chat/Workerman/Worker.php(1614): Workerman\Worker::forkWorkers()
+#10 /home/zan/Code/Chat/Workerman/Worker.php(1563): Workerman\Worker::monitorWorkersForLinux()
+#11 /home/zan/Code/Chat/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#12 /home/zan/Code/Chat/Server/start.php(74): Workerman\Worker::runAll()
+#13 {main}
+2019-02-21 20:57:43 pid:1386 Worker[1386] process terminated
+2019-02-21 20:57:43 pid:1145 worker[none:1386] exit with status 64000
+2019-02-21 20:57:49 pid:1145 Workerman[start.php] stopping ...
+2019-02-21 20:57:49 pid:1145 Workerman[start.php] has been stopped
+2019-02-21 20:57:51 pid:1504 Workerman[start.php] start in DEBUG mode
+2019-02-21 20:57:59 pid:1505 Error: Call to a member function send() on string in /home/zan/Code/Chat/Server/start.php:62
+Stack trace:
+#0 /home/zan/Code/Chat/Server/start.php(34): sendToAll('{"username":"gz...', '3901')
+#1 [internal function]: ws_message(Object(Workerman\Connection\TcpConnection), Array)
+#2 /home/zan/Code/Chat/Workerman/Connection/TcpConnection.php(658): call_user_func('ws_message', Object(Workerman\Connection\TcpConnection), '3901:1')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#4 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#5 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#6 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#7 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#9 /home/zan/Code/Chat/Workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#10 /home/zan/Code/Chat/Server/start.php(74): Workerman\Worker::runAll()
+#11 {main}
+2019-02-21 20:57:59 pid:1505 Worker[1505] process terminated
+2019-02-21 20:57:59 pid:1504 worker[none:1505] exit with status 64000
+2019-02-21 20:58:19 pid:1504 Workerman[start.php] stopping ...
+2019-02-21 20:58:19 pid:1504 Workerman[start.php] has been stopped
+2019-02-21 20:58:21 pid:1585 Workerman[start.php] start in DEBUG mode
+2019-02-21 20:58:29 pid:1586 Error: Call to a member function send() on string in /home/zan/Code/Chat/Server/start.php:62
+Stack trace:
+#0 /home/zan/Code/Chat/Server/start.php(34): sendToAll('{"username":"gz...', '4277')
+#1 [internal function]: ws_message(Object(Workerman\Connection\TcpConnection), Array)
+#2 /home/zan/Code/Chat/Workerman/Connection/TcpConnection.php(658): call_user_func('ws_message', Object(Workerman\Connection\TcpConnection), '4277:1')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#4 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#5 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#6 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#7 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#9 /home/zan/Code/Chat/Workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#10 /home/zan/Code/Chat/Server/start.php(74): Workerman\Worker::runAll()
+#11 {main}
+2019-02-21 20:58:29 pid:1586 Worker[1586] process terminated
+2019-02-21 20:58:29 pid:1585 worker[none:1586] exit with status 64000
+2019-02-21 20:58:48 pid:1585 Workerman[start.php] stopping ...
+2019-02-21 20:58:48 pid:1585 Workerman[start.php] has been stopped
+2019-02-21 20:58:49 pid:1662 Workerman[start.php] start in DEBUG mode
+2019-02-21 20:59:08 pid:1663 Error: Call to a member function send() on string in /home/zan/Code/Chat/Server/start.php:62
+Stack trace:
+#0 /home/zan/Code/Chat/Server/start.php(34): sendToAll('{"username":"gz...', '7812')
+#1 [internal function]: ws_message(Object(Workerman\Connection\TcpConnection), Array)
+#2 /home/zan/Code/Chat/Workerman/Connection/TcpConnection.php(658): call_user_func('ws_message', Object(Workerman\Connection\TcpConnection), '7812:1')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#4 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#5 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#6 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#7 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#9 /home/zan/Code/Chat/Workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#10 /home/zan/Code/Chat/Server/start.php(74): Workerman\Worker::runAll()
+#11 {main}
+2019-02-21 20:59:08 pid:1663 Worker[1663] process terminated
+2019-02-21 20:59:08 pid:1662 worker[none:1663] exit with status 64000
+2019-02-21 21:00:32 pid:1662 Workerman[start.php] stopping ...
+2019-02-21 21:00:32 pid:1662 Workerman[start.php] has been stopped
+2019-02-21 21:00:33 pid:1812 Workerman[start.php] start in DEBUG mode
+2019-02-21 21:00:42 pid:1813 Error: Call to a member function send() on string in /home/zan/Code/Chat/Server/start.php:64
+Stack trace:
+#0 /home/zan/Code/Chat/Server/start.php(34): sendToAll('{"username":"gz...', 6606)
+#1 [internal function]: ws_message(Object(Workerman\Connection\TcpConnection), Array)
+#2 /home/zan/Code/Chat/Workerman/Connection/TcpConnection.php(658): call_user_func('ws_message', Object(Workerman\Connection\TcpConnection), '6606:1')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#4 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#5 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#6 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#7 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#9 /home/zan/Code/Chat/Workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#10 /home/zan/Code/Chat/Server/start.php(76): Workerman\Worker::runAll()
+#11 {main}
+2019-02-21 21:00:42 pid:1813 Worker[1813] process terminated
+2019-02-21 21:00:42 pid:1812 worker[none:1813] exit with status 64000
+2019-02-21 21:05:49 pid:1812 Workerman[start.php] stopping ...
+2019-02-21 21:05:50 pid:1812 Workerman[start.php] has been stopped
+2019-02-21 21:05:51 pid:2017 Workerman[start.php] start in DEBUG mode
+2019-02-21 21:10:57 pid:2017 Workerman[start.php] stopping ...
+2019-02-21 21:10:57 pid:2017 Workerman[start.php] has been stopped
+2019-02-21 21:10:59 pid:2324 Workerman[start.php] start in DEBUG mode
+2019-02-21 21:11:10 pid:2325 Error: Call to a member function send() on null in /home/zan/Code/Chat/Server/start.php:64
+Stack trace:
+#0 /home/zan/Code/Chat/Server/start.php(34): sendToAll('{"username":"gz...', 734)
+#1 [internal function]: ws_message(Object(Workerman\Connection\TcpConnection), Array)
+#2 /home/zan/Code/Chat/Workerman/Connection/TcpConnection.php(658): call_user_func('ws_message', Object(Workerman\Connection\TcpConnection), '734:1')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #26)
+#4 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#5 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#6 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#7 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#9 /home/zan/Code/Chat/Workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#10 /home/zan/Code/Chat/Server/start.php(76): Workerman\Worker::runAll()
+#11 {main}
+2019-02-21 21:11:10 pid:2325 Worker[2325] process terminated
+2019-02-21 21:11:10 pid:2324 worker[none:2325] exit with status 64000
+2019-02-21 21:13:03 pid:2324 Workerman[start.php] stopping ...
+2019-02-21 21:13:03 pid:2324 Workerman[start.php] has been stopped
+2019-02-21 21:13:25 pid:2495 Workerman[start.php] start in DEBUG mode
+2019-02-21 21:13:36 pid:2497 Error: Call to a member function send() on null in /home/zan/Code/Chat/Server/start.php:64
+Stack trace:
+#0 /home/zan/Code/Chat/Server/start.php(34): sendToAll('{"username":"gz...', 4824)
+#1 [internal function]: ws_message(Object(Workerman\Connection\TcpConnection), Array)
+#2 /home/zan/Code/Chat/Workerman/Connection/TcpConnection.php(658): call_user_func('ws_message', Object(Workerman\Connection\TcpConnection), '4824:1')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#4 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#5 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#6 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#7 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#9 /home/zan/Code/Chat/Workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#10 /home/zan/Code/Chat/Server/start.php(76): Workerman\Worker::runAll()
+#11 {main}
+2019-02-21 21:13:36 pid:2497 Worker[2497] process terminated
+2019-02-21 21:13:36 pid:2495 worker[none:2497] exit with status 64000
+2019-02-21 21:15:32 pid:2495 Workerman[start.php] stopping ...
+2019-02-21 21:15:32 pid:2495 Workerman[start.php] has been stopped
+2019-02-21 21:15:34 pid:2672 Workerman[start.php] start in DEBUG mode
+2019-02-21 21:15:42 pid:2673 Error: Call to a member function send() on string in /home/zan/Code/Chat/Server/start.php:65
+Stack trace:
+#0 /home/zan/Code/Chat/Server/start.php(35): sendToAll('{"username":"gz...', 3539)
+#1 [internal function]: ws_message(Object(Workerman\Connection\TcpConnection), Array)
+#2 /home/zan/Code/Chat/Workerman/Connection/TcpConnection.php(658): call_user_func('ws_message', Object(Workerman\Connection\TcpConnection), '3539:1')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#4 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#5 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#6 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#7 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#9 /home/zan/Code/Chat/Workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#10 /home/zan/Code/Chat/Server/start.php(77): Workerman\Worker::runAll()
+#11 {main}
+2019-02-21 21:15:42 pid:2673 Worker[2673] process terminated
+2019-02-21 21:15:42 pid:2672 worker[none:2673] exit with status 64000
+2019-02-21 21:17:58 pid:3004 Workerman[start.php] start in DEBUG mode
+2019-02-21 21:17:58 pid:3004 Workerman[start.php] already running
+2019-02-21 21:18:09 pid:3068 Workerman[start.php] start in DEBUG mode
+2019-02-21 21:18:09 pid:3068 Workerman[start.php] already running
+2019-02-21 21:18:29 pid:3128 Workerman[start.php] start in DEBUG mode
+2019-02-21 21:18:29 pid:3128 Workerman[start.php] already running
+2019-02-21 21:18:33 pid:3203 Workerman[start.php] start in DEBUG mode
+2019-02-21 21:18:33 pid:3203 Workerman[start.php] already running
+2019-02-21 21:18:41 pid:3261 Workerman[start.php] start in DEBUG mode
+2019-02-21 21:18:41 pid:3261 Workerman[start.php] already running
+2019-02-21 21:18:50 pid:3467 Workerman[start.php] start in DEBUG mode
+2019-02-21 21:18:50 pid:3467 Workerman[start.php] already running
+2019-02-21 21:20:06 pid:3714 Workerman[start.php] start in DEBUG mode
+2019-02-21 21:20:06 pid:3714 Workerman[start.php] already running
+2019-02-21 21:21:16 pid:2672 worker[none:2702] exit with status 5247
+2019-02-21 21:21:18 pid:2672 Workerman[start.php] stopping ...
+2019-02-21 21:21:18 pid:2672 Workerman[start.php] has been stopped
+2019-02-21 21:21:21 pid:3939 Workerman[start.php] start in DEBUG mode
+2019-02-21 21:23:33 pid:3939 Workerman[start.php] stopping ...
+2019-02-21 21:23:33 pid:3939 Workerman[start.php] has been stopped
+2019-02-21 21:23:35 pid:4047 Workerman[start.php] start in DEBUG mode
+2019-02-21 21:24:49 pid:4047 Workerman[start.php] stopping ...
+2019-02-21 21:24:49 pid:4047 Workerman[start.php] has been stopped
+2019-02-21 21:24:50 pid:4144 Workerman[start.php] start in DEBUG mode
+2019-02-21 21:24:59 pid:4145 Error: Call to a member function send() on string in /home/zan/Code/Chat/Server/start.php:67
+Stack trace:
+#0 /home/zan/Code/Chat/Server/start.php(35): sendToAll('{"username":"gz...', 287)
+#1 [internal function]: ws_message(Object(Workerman\Connection\TcpConnection), Array)
+#2 /home/zan/Code/Chat/Workerman/Connection/TcpConnection.php(658): call_user_func('ws_message', Object(Workerman\Connection\TcpConnection), '287:1')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#4 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#5 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#6 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#7 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#9 /home/zan/Code/Chat/Workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#10 /home/zan/Code/Chat/Server/start.php(79): Workerman\Worker::runAll()
+#11 {main}
+2019-02-21 21:24:59 pid:4145 Worker[4145] process terminated
+2019-02-21 21:24:59 pid:4144 worker[none:4145] exit with status 64000
+2019-02-21 21:25:49 pid:4144 Workerman[start.php] stopping ...
+2019-02-21 21:25:49 pid:4144 Workerman[start.php] has been stopped
+2019-02-21 21:25:54 pid:4239 Workerman[start.php] start in DEBUG mode
+2019-02-21 21:26:04 pid:4240 Error: Call to a member function send() on string in /home/zan/Code/Chat/Server/start.php:67
+Stack trace:
+#0 /home/zan/Code/Chat/Server/start.php(35): sendToAll('{"username":"gz...', 8325)
+#1 [internal function]: ws_message(Object(Workerman\Connection\TcpConnection), Array)
+#2 /home/zan/Code/Chat/Workerman/Connection/TcpConnection.php(658): call_user_func('ws_message', Object(Workerman\Connection\TcpConnection), '8325:1')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#4 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#5 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#6 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#7 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#9 /home/zan/Code/Chat/Workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#10 /home/zan/Code/Chat/Server/start.php(79): Workerman\Worker::runAll()
+#11 {main}
+2019-02-21 21:26:04 pid:4240 Worker[4240] process terminated
+2019-02-21 21:26:04 pid:4239 worker[none:4240] exit with status 64000
+2019-02-21 21:27:36 pid:4239 Workerman[start.php] stopping ...
+2019-02-21 21:27:36 pid:4239 Workerman[start.php] has been stopped
+2019-02-21 21:27:38 pid:4414 Workerman[start.php] start in DEBUG mode
+2019-02-21 21:27:49 pid:4423 Error: Call to a member function send() on string in /home/zan/Code/Chat/Server/start.php:68
+Stack trace:
+#0 /home/zan/Code/Chat/Server/start.php(35): sendToAll('{"username":"gz...', 648)
+#1 [internal function]: ws_message(Object(Workerman\Connection\TcpConnection), Array)
+#2 /home/zan/Code/Chat/Workerman/Connection/TcpConnection.php(658): call_user_func('ws_message', Object(Workerman\Connection\TcpConnection), '648:1')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#4 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#5 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#6 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#7 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#9 /home/zan/Code/Chat/Workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#10 /home/zan/Code/Chat/Server/start.php(80): Workerman\Worker::runAll()
+#11 {main}
+2019-02-21 21:27:49 pid:4423 Worker[4423] process terminated
+2019-02-21 21:27:49 pid:4414 worker[none:4423] exit with status 64000
+2019-02-21 21:28:54 pid:4414 Workerman[start.php] stopping ...
+2019-02-21 21:28:54 pid:4414 Workerman[start.php] has been stopped
+2019-02-21 21:28:55 pid:4529 Workerman[start.php] start in DEBUG mode
+2019-02-21 21:29:03 pid:4530 Error: Call to a member function send() on string in /home/zan/Code/Chat/Server/start.php:68
+Stack trace:
+#0 /home/zan/Code/Chat/Server/start.php(35): sendToAll('{"username":"gz...', 5775)
+#1 [internal function]: ws_message(Object(Workerman\Connection\TcpConnection), Array)
+#2 /home/zan/Code/Chat/Workerman/Connection/TcpConnection.php(658): call_user_func('ws_message', Object(Workerman\Connection\TcpConnection), '5775:1')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#4 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#5 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#6 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#7 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#9 /home/zan/Code/Chat/Workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#10 /home/zan/Code/Chat/Server/start.php(80): Workerman\Worker::runAll()
+#11 {main}
+2019-02-21 21:29:03 pid:4530 Worker[4530] process terminated
+2019-02-21 21:29:03 pid:4529 worker[none:4530] exit with status 64000
+2019-02-21 21:31:16 pid:4529 Workerman[start.php] stopping ...
+2019-02-21 21:31:16 pid:4529 Workerman[start.php] has been stopped
+2019-02-21 21:31:18 pid:4709 Workerman[start.php] start in DEBUG mode
+2019-02-21 21:31:29 pid:4712 Error: Call to a member function send() on null in /home/zan/Code/Chat/Server/start.php:65
+Stack trace:
+#0 /home/zan/Code/Chat/Server/start.php(34): sendToAll('{"username":"gz...', 4148)
+#1 [internal function]: ws_message(Object(Workerman\Connection\TcpConnection), Array)
+#2 /home/zan/Code/Chat/Workerman/Connection/TcpConnection.php(658): call_user_func('ws_message', Object(Workerman\Connection\TcpConnection), '4148:1')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#4 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#5 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#6 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#7 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#9 /home/zan/Code/Chat/Workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#10 /home/zan/Code/Chat/Server/start.php(77): Workerman\Worker::runAll()
+#11 {main}
+2019-02-21 21:31:29 pid:4712 Worker[4712] process terminated
+2019-02-21 21:31:29 pid:4709 worker[none:4712] exit with status 64000
+2019-02-21 21:33:28 pid:4709 Workerman[start.php] stopping ...
+2019-02-21 21:33:28 pid:4709 Workerman[start.php] has been stopped
+2019-02-21 21:33:29 pid:4886 Workerman[start.php] start in DEBUG mode
+2019-02-21 21:33:32 pid:4887 ArgumentCountError: Too few arguments to function sendToAll(), 1 passed in /home/zan/Code/Chat/Server/start.php on line 21 and exactly 3 expected in /home/zan/Code/Chat/Server/start.php:48
+Stack trace:
+#0 /home/zan/Code/Chat/Server/start.php(21): sendToAll(Array)
+#1 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), 'GET /?username=...')
+#2 /home/zan/Code/Chat/Workerman/Protocols/Websocket.php(393): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'GET /?username=...')
+#3 /home/zan/Code/Chat/Workerman/Protocols/Websocket.php(57): Workerman\Protocols\Websocket::dealHandshake('GET /?username=...', Object(Workerman\Connection\TcpConnection))
+#4 /home/zan/Code/Chat/Workerman/Connection/TcpConnection.php(621): Workerman\Protocols\Websocket::input('GET /?username=...', Object(Workerman\Connection\TcpConnection))
+#5 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #22)
+#6 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#7 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#8 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#9 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#10 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#11 /home/zan/Code/Chat/Workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#12 /home/zan/Code/Chat/Server/start.php(77): Workerman\Worker::runAll()
+#13 {main}
+2019-02-21 21:33:32 pid:4887 Worker[4887] process terminated
+2019-02-21 21:33:32 pid:4886 worker[none:4887] exit with status 64000
+2019-02-21 21:33:58 pid:4886 Workerman[start.php] stopping ...
+2019-02-21 21:33:58 pid:4886 Workerman[start.php] has been stopped
+2019-02-21 21:33:59 pid:5015 Workerman[start.php] start in DEBUG mode
+2019-02-21 21:34:07 pid:5016 Error: Call to a member function send() on string in /home/zan/Code/Chat/Server/start.php:65
+Stack trace:
+#0 /home/zan/Code/Chat/Server/start.php(34): sendToAll('{"username":"gz...', 203, '203')
+#1 [internal function]: ws_message(Object(Workerman\Connection\TcpConnection), Array)
+#2 /home/zan/Code/Chat/Workerman/Connection/TcpConnection.php(658): call_user_func('ws_message', Object(Workerman\Connection\TcpConnection), '203:1')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#4 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#5 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#6 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#7 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#9 /home/zan/Code/Chat/Workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#10 /home/zan/Code/Chat/Server/start.php(77): Workerman\Worker::runAll()
+#11 {main}
+2019-02-21 21:34:07 pid:5016 Worker[5016] process terminated
+2019-02-21 21:34:07 pid:5015 worker[none:5016] exit with status 64000
+2019-02-21 21:34:39 pid:5015 Workerman[start.php] stopping ...
+2019-02-21 21:34:39 pid:5015 Workerman[start.php] has been stopped
+2019-02-21 21:34:41 pid:5139 Workerman[start.php] start in DEBUG mode
+2019-02-21 21:34:50 pid:5140 Error: Call to a member function send() on string in /home/zan/Code/Chat/Server/start.php:65
+Stack trace:
+#0 /home/zan/Code/Chat/Server/start.php(34): sendToAll('{"username":"gz...', 4701, 6018)
+#1 [internal function]: ws_message(Object(Workerman\Connection\TcpConnection), Array)
+#2 /home/zan/Code/Chat/Workerman/Connection/TcpConnection.php(658): call_user_func('ws_message', Object(Workerman\Connection\TcpConnection), '4701:1')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#4 /home/zan/Code/Chat/Workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#5 /home/zan/Code/Chat/Workerman/Worker.php(2349): Workerman\Events\Select->loop()
+#6 /home/zan/Code/Chat/Workerman/Worker.php(1480): Workerman\Worker->run()
+#7 /home/zan/Code/Chat/Workerman/Worker.php(1310): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /home/zan/Code/Chat/Workerman/Worker.php(1284): Workerman\Worker::forkWorkersForLinux()
+#9 /home/zan/Code/Chat/Workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#10 /home/zan/Code/Chat/Server/start.php(77): Workerman\Worker::runAll()
+#11 {main}
+2019-02-21 21:34:50 pid:5140 Worker[5140] process terminated
+2019-02-21 21:34:50 pid:5139 worker[none:5140] exit with status 64000
+2019-02-21 21:38:13 pid:5139 Workerman[start.php] stopping ...
+2019-02-21 21:38:13 pid:5139 Workerman[start.php] has been stopped
+2019-02-21 21:38:14 pid:5376 Workerman[start.php] start in DEBUG mode
+2019-02-21 21:43:40 pid:5376 Workerman[start.php] stopping ...
+2019-02-21 21:43:40 pid:5376 Workerman[start.php] has been stopped
