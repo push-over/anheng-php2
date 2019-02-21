@@ -6,4 +6,4 @@
 
 通过不同浏览器登录
 
-![](./webwxgetmsgimg .jpeg)
+![](webwxgetmsgimg .jpeg)
